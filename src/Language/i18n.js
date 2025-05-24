@@ -106,7 +106,9 @@ const resources = {
 
         event_calendar:"Event Calender",
         join_channel_title:"Join Channel",
+        create_channel_title:"Create Channel",
       //ADDEVENTSCREEN
+    
       place:"Place",
       description:"Description",
       fill_all_fields:"Please fill all fields!",
@@ -335,7 +337,7 @@ const resources = {
         server_error: "Server error! Please try again.",
         entertainment:"Entertainment",
         games:"Games",
-        spor: "Spor",
+        spor: "Sports",
         music : "Music",
         family: "Family", 
         friends : "Friends",
@@ -389,7 +391,10 @@ const resources = {
         strong: "Strong",
         },
 
-      //GOALS----------------------------------------------------------------------------------------------
+        //GOALS----------------------------------------------------------------------------------------------
+        goal_types: {
+          "financial": "Finance",
+        },
       goals_page:{
         no_goals_text: "Start adding your goals..",
         open_channel_message: "Please log in to a channel to view goals.",
@@ -401,6 +406,7 @@ const resources = {
         title: "Title",
         type: "Type",
         description: "Description",
+
       },
       create_goals_page: {
         default_type: "Finance",
@@ -621,6 +627,7 @@ const resources = {
       contact_text: "Gizlilik politikamızla ilgili sorularınız için bizimle şu adresten iletişime geçebilirsiniz:",
       event_calendar:"Etkinlik Takvimi",
       join_channel_title:"Kanala Katıl",
+      create_channel_title:"Kanal Oluştur",
       
       //ADDEVENTSCREEN
       place:"Yer",
@@ -851,7 +858,7 @@ const resources = {
         server_error: "Sunucu hatası! Lütfen tekrar deneyin.",
         entertainment:"Eğlence",
         games:"Oyun",
-        spor: "Sports",
+        spor: "Spor",
         music : "Müzik",
         family: "Aile",
         friends : "Arkadaş",
@@ -906,6 +913,9 @@ const resources = {
       },
 
       //GOALS----------------------------------------------------------------------------------------------
+      goal_types: {
+        "financial": "Finans",
+      },
       goals_page:{
         no_goals_text: "Hedeflerinizi eklemeye başlayın..",
         open_channel_message: "Hedefleri görüntüleyebilmek için lütfen kanalda oturum açınız.",

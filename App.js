@@ -8,6 +8,8 @@ import { I18nextProvider } from 'react-i18next';
 import { LanguageProvider } from './src/Language/LanguageContext';
 import { ChannelProvider } from './src/context/ChannelContext';
 
+import { GoalsProvider } from './src/context/GoalContext';
+
 const Stack = createStackNavigator();
 
 const changeLanguage = async (lng) => {
@@ -15,25 +17,25 @@ const changeLanguage = async (lng) => {
   i18n.changeLanguage(lng);
 };
 
-
 const App = () => {
   return (
-    <ChannelProvider>
-      <LanguageProvider>
-        <I18nextProvider i18n={i18n}>
-          <NavigationStack changeLanguage={changeLanguage} />
-        </I18nextProvider>
-      </LanguageProvider>
-    </ChannelProvider>
+    <GoalsProvider> 
+      <ChannelProvider>
+        <LanguageProvider>
+          <I18nextProvider i18n={i18n}>
+            <NavigationStack changeLanguage={changeLanguage} />
+          </I18nextProvider>
+        </LanguageProvider>
+      </ChannelProvider>
+    </GoalsProvider>
   );
 };
 
 export default App;
-
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#1E1E1E',
   }
-})
+});
